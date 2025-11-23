@@ -1,44 +1,63 @@
-.calculator{
-    width: 30vw;
-    height :70vh;
-    border: 1px solid rgb(86, 86, 226);
-    margin:auto;
-    position: relative;
-    top: 100px;
-    display:grid ;
-    padding: 10px;
-     gap: 3%;
+*{
+    margin: 1px;
+    padding: 0px;
+    box-sizing: border-box;
+    box-shadow: #256acc;
 }
-.calculator>.form-group{
+
+body {
     display: flex;
-    justify-content: space-between;
-    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    background: #8ca7e7;
+    min-height: 100vh;
 }
-.calculator>.form-group>button{
-    width: 25%;
-    font-size: 20 px;
-    border:none;
-    border-radius: 3px;
 
+.calculator {
+    width: 90vw;
+    max-width: 400px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    display: grid;
+    gap: 12px;
+    box-shadow:  0px 4px 20px rgba(2, 2, 2, 0.2);
 }
-.calculator>.form-group>button:hover{
-    background-color: rgb(90, 89, 89);
-}
-.calculator>.form-group>input{
+
+.calculator > input {
     width: 100%;
-    font-size: 40 px;
-    border: 2px solid rgb(218, 221, 39);
-    text-align: left;
+    height: 90px;           
+    font-size: 2.5rem;      
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
     outline: none;
-    border-radius: 5px;
-    padding-right:10px ;
+    text-align: right;
+    background: #f9f9f9;
+}
+.form-group {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
 
+.form-group button {
+    padding: 20px;
+    font-size: 1.4rem;
+    border: none;
+    border-radius: 10px;
+    background: #e5e5e5;
+    transition: 0.2s;
 }
-.colrt{
-    color: aliceblue;
-    background-color: rgb(21, 154, 237);
-    font-size: 30px;
+
+.form-group button:hover {
+    background: #525353;
 }
-.calculator>.form-group>button.colrt:hover{
-    background-color: rgb(89, 132, 218);
+
+.form-group button.colrt {
+    background-color: #1a73e8 !important;
+    color: white !important;
+}
+form-group button.colrt:hover {
+    background-color: #505152;
 }
